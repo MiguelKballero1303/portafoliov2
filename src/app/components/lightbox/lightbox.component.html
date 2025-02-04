@@ -1,0 +1,15 @@
+<div class="lightbox">
+    <div class="lightbox-content">
+      <div class="lightbox-close" (click)="closeLightbox()">&times;</div>
+      <img [src]="lightboxImage" alt="" (click)="nextItem()" class="lightbox-img">
+      <div class="lightbox-caption">
+        <div class="caption-text">{{ captionText }}</div>
+        <div class="caption-counter">{{ currentIndex + 1 }} / {{ images.length }}</div>
+      </div>
+    </div>
+    <div class="lightbox-controls">
+      <div class="prev-item" (click)="prevItem()"><i class="fa fa-angle-left"></i></div>
+      <div class="next-item" (click)="nextItem()"><i class="fa fa-angle-right"></i></div>
+    </div>
+  </div>
+  
